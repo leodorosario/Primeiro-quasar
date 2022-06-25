@@ -14,7 +14,7 @@
       </q-toolbar>
       <div class="q-px-lg q-pt-xl q-mb-md">
         <div class="text-h3">Prime-Quasar</div>
-        <div class="text-subtitle1"></div>
+        <div class="text-subtitle1">{{ todaysDate}}</div>
       </div>
       <q-img
          src="double-exposure.jpg"
@@ -180,7 +180,7 @@ export default defineComponent({
     height: 100%;
     z-index: -1;
     opacity: 1;
-    filter: grayscale(100%);
+    filter: bluescale(100%);
 
 }
 
