@@ -14,10 +14,10 @@
       </q-toolbar>
       <div class="q-px-lg q-pt-xl q-mb-md">
         <div class="text-h3">Prime-Quasar</div>
-        <div class="text-subtitle1">Saturday, 25 June</div>
+        <div class="text-subtitle1"></div>
       </div>
       <q-img
-        src="paisagem1.jpg"
+         src="double-exposure.jpg"
         class="header-image absolute-top"/>
     </q-header>
 
@@ -167,10 +167,14 @@ export default defineComponent({
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
+
     }
   }
+
 })
+
 </script>
+
 <style lang="scss">
   .header-image {
     height: 100%;
@@ -179,4 +183,5 @@ export default defineComponent({
     filter: grayscale(100%);
 
 }
+
 </style>
