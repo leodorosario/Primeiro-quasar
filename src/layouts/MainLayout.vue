@@ -1,22 +1,26 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header>
       <q-toolbar>
         <q-btn
           flat
           dense
           round
+          @click="toggleLeftDrawer"
           icon="menu"
           aria-label="Menu"
-          @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
+      <div class="q-px-lg q-pt-xl q-mb-md">
+        <div class="text-h3">Primeiro-Quasar</div>
+      <div class="text-subtitle1">Saturday, 25 June 2022</div>
+      </div>
+
+        <q-img
+        src="/assets/paisagem1.jpg"
+        />
+
     </q-header>
 
     <q-drawer
@@ -48,6 +52,8 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
+import { date } from 'quasar'
+
 
 const linksList = [
   {
@@ -114,3 +120,11 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="scss">
+.header-image{
+  height:100%;
+  z-index: -1;
+  opacity: 0.2;
+  filter: grayscale(100%)
+  }
+  </style>
