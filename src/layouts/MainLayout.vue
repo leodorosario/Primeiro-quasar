@@ -43,7 +43,11 @@
       </q-list>
         <q-scroll-area style="height: calc(100% - 164px); margin-top: 164px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+            to="/"
+            exact
+            clickable
+            v-ripple>
               <q-item-section avatar>
                 <q-icon name="list" />
               </q-item-section>
@@ -53,7 +57,10 @@
               </q-item-section>
             </q-item>
 
-            <q-item active clickable v-ripple>
+            <q-item
+            to="/help"
+              clickable
+              v-ripple>
               <q-item-section avatar>
                 <q-icon name="help" />
               </q-item-section>
@@ -65,21 +72,21 @@
 
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="send" />
+
               </q-item-section>
 
               <q-item-section>
-                Send
+
               </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="drafts" />
+
               </q-item-section>
 
               <q-item-section>
-                Drafts
+
               </q-item-section>
             </q-item>
           </q-list>
