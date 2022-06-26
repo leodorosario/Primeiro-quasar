@@ -26,8 +26,8 @@
       show-if-above
       bordered
 
-      :width="200"
-        :breakpoint="400"
+      :width="250"
+        :breakpoint="600"
     >
 
       <q-list>
@@ -85,10 +85,10 @@
           </q-list>
         </q-scroll-area>
 
-        <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
+        <q-img class="absolute-top" src="girls-369788_1280.jpg" style="height: 164px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="music-1020087_1280.jpg">
             </q-avatar>
             <div class="text-weight-bold">Leo do Rosario</div>
             <div>https://github.com/leodorosario</div>
