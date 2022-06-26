@@ -41,25 +41,25 @@
           v-bind="link"
 />
       </q-list>
-        <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
+        <q-scroll-area style="height: calc(100% - 164px); margin-top: 164px; border-right: 1px solid #ddd">
           <q-list padding>
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="inbox" />
+                <q-icon name="list" />
               </q-item-section>
 
               <q-item-section>
-                Inbox
+                Prime-Quasar
               </q-item-section>
             </q-item>
 
             <q-item active clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="star" />
+                <q-icon name="help" />
               </q-item-section>
 
               <q-item-section>
-                Star
+                Help
               </q-item-section>
             </q-item>
 
@@ -97,7 +97,9 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <Keep-alive>
+        <router-view />
+      </Keep-alive>
     </q-page-container>
   </q-layout>
 </template>
@@ -108,48 +110,7 @@ import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
+
 ]
 
 export default defineComponent({
